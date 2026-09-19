@@ -1,0 +1,3 @@
+pod_extra_herd_bonus = {
+    max_herd_size = 42
+}

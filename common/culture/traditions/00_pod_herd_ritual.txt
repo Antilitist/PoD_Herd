@@ -1,0 +1,30 @@
+pod_blood_communion_rite = {
+    icon = gfx_interface_icons_traditions_ritual_icon  # Reuse a vanilla/PoD ritual icon; change if you add your own gfx
+
+    category = ritual
+
+    # Requirements - only for vampire cultures (adjust as needed)
+    potential = {
+        is_vampire = yes  # PoD trigger; fallback to always = yes if it doesn't work
+    }
+
+    # Cost & Adoption Time
+    prestige_cost = 1500
+    time = 3  # monthes
+
+    # The actual bonus
+    modifier = {
+        max_herd_size = 42
+    }
+
+    # Optional: Extra flavor effect on adoption
+    on_adopt = {
+        effect = {
+            custom_pod_herd_boost = yes
+        }
+    }
+
+    # Localization keys
+    name = tradition_pod_blood_communion_rite
+    description = tradition_pod_blood_communion_rite_desc
+}

@@ -1,0 +1,10 @@
+custom_pod_herd_boost = {
+    effect = {
+        # Direct herd increase if the mod supports it
+        change_herd_size = 42   # Adjust number; check PoD files for exact syntax
+        add_character_modifier = {
+            modifier = pod_extra_herd_bonus
+            days = -1  # Permanent
+        }
+    }
+}
